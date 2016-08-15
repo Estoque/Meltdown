@@ -1,0 +1,1514 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import 'compass';
+@import 'compass/css3';
+
+$base-font-size: 16px;
+$base-line-height: 26px;
+@include establish-baseline;
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://yui.yahooapis.com/pure/0.3.0/pure-min.css);
+@import url(http://fonts.googleapis.com/css?family=Wire+One);
+
+
+@font-face {
+	font-family: 'Ostrich Sans';
+	src: url(http://pds21.egloos.com/pds/201312/26/26/ostrich-black.eot);
+	src: local('☺'), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-black.woff) format('woff'), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-black.ttf) format('truetype'), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-black.svg) format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ostrich Sans';
+	src: url(http://pds21.egloos.com/pds/201312/26/26/ostrich-bold.eot);
+	src: local('☺'), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-bold.woff) format('woff'), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-bold.ttf) format('truetype'), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-bold.svg) format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ostrich Sans';
+	src: url(http://pds26.egloos.com/pds/201312/26/26/ostrich-regular.eot);
+	src: local('☺'), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-regular.woff) format('woff'), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-regular.ttf) format('truetype'), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-regular.svg) format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ostrich Sans';
+	src: url(http://pds27.egloos.com/pds/201312/26/26/ostrich-light.eot);
+	src: local('☺'), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-light.woff) format('woff'), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-light.ttf) format('truetype'), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-light.svg) format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+/* Ostrich Sans Rounded */
+
+@font-face {
+	font-family: 'Ostrich Sans Rounded';
+	src: url(http://pds27.egloos.com/pds/201312/26/26/ostrich-rounded.eot);
+	src: local('☺'), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-rounded.woff) format('woff'), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-rounded.ttf) format('truetype'), url(http://pds26.egloos.com/pds/201312/26/26/ostrich-rounded.svg) format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* Ostrich Sans Inline */
+
+@font-face {
+	font-family: 'Ostrich Sans Inline';
+	src: url(http://pds27.egloos.com/pds/201312/26/26/ostrich-sans-inline-regular.eot);
+	src: local('☺'), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-regular.woff) format('woff'), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-regular.ttf) format('truetype'), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-regular.svg) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ostrich Sans Inline';
+	src: url(http://pds26.egloos.com/pds/201312/26/26/ostrich-sans-inline-italic.eot);
+	src: local('☺'), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-italic.woff) format('woff'), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-italic.ttf) format('truetype'), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-sans-inline-italic.svg) format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+$eng-font: 'Ostrich Sans', Wire One, Nanum Gothic,  sans-serif;
+$default-font: 'Nanum Gothic', sans-serif;
+
+$text-color: #2D3135;
+
+html {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+body {
+    color: #2D3135;
+    font-family: $default-font;
+    font-size: 1em;
+}
+
+span {
+	font-family: $default-font;
+}
+
+div#navibar {
+	font-family: $default-font;
+	
+	a {
+		font-family: $default-font;
+	}
+	
+	span {
+		font-family: $default-font;
+	}
+	p {
+		font-family: $default-font;
+	}
+}
+
+a {
+	@include link-colors(#0054a7, #e84c00, #00cfe8, #C1C9D1, #00e89e );
+	text-decoration: none;
+}
+
+/*
+Add transition to containers so they can push in and out.
+*/
+#layout,
+#menu,
+.menu-link {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+/*
+This is the parent `<div>` that contains the menu and the content area.
+*/
+#layout {
+    padding-left: 280px; /* left col width "#menu" */
+    left: 0;
+}
+
+/*
+The content `<div>` is where all your content goes.
+*/
+/*
+.content {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 800px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+}
+*/
+
+.header {
+     margin: 0;
+     color: #333;
+     text-align: center;
+     padding: 2.5em 2em 0;
+     border-bottom: 1px solid #eee;
+ }
+    .header h1 {
+        margin: 0.2em 0;
+        font-size: 3em;
+        font-weight: 300;
+    }
+     .header h2 {
+        font-weight: 300;
+        color: #ccc;
+        padding: 0;
+        margin-top: 0;
+    }
+
+.content-subhead {
+    margin: 50px 0 20px 0;
+    font-weight: 300;
+    color: #888;
+}
+
+/*
+The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+appears on the left side of the page.
+
+By using the combination of `position: fixed; top: 0; bottom:0;`, we can make
+the menu have 100% height and be fixed on the page as the rest of it scrolls.
+*/
+#menu {
+    margin-left: -280px; /* this should be "#menu" width */
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: 280px; /* this should be "#menu" width */
+    bottom: 0;
+    z-index: 1; /* so the menu or its navicon stays above all content */
+    background: #2D3135;
+    overflow-y: auto;
+    -webkit-overflow-scroll: touch; /* for smooth scrolling on mobile */
+    color: #C1C9D1;
+    padding: 0;
+}
+    /*
+    All anchors inside the menu should be styled like this.
+    */
+
+    /*
+    Remove all background/borders, since we are applying them to #menu.
+    */
+     #menu .pure-menu,
+     #menu .pure-menu ul {
+        border: none;
+        background: transparent;
+    }
+
+#main {
+	position: relative;
+	z-index: 1;
+}
+
+/* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+/*
+The button to open/close the Menu is custom-made and not part of Pure. Here's
+how it works:
+*/
+
+/*
+`.menu-link` represents the responsive menu toggle that shows/hides on
+small screens.
+*/
+.menu-link {
+    display: none; /* show this only on small screens */
+    top: 0;
+    left: 280px; /* `#menu`'s width */
+    background: rgba(#000,.5);
+    font-size: 10px; /* change this value to increase/decrease button size */
+    z-index: 9999999;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 5px 10px;
+    
+    &:hover {
+	    background: rgba(#000,1);
+	    @include transition-property(all);
+		  @include transition-duration(0.2s);
+		  @include transition-timing-function(ease-out);
+    }
+    
+    a {
+	   font-family: 'Ostrich Sans Rounded', Wire One, Nanum Gothic, sans-serif;
+	   font-size: 30px;
+	   margin-left: 10px; 
+	   color: #C1C9D1;
+	   
+	   &:hover {
+		   color: #efd128;
+		  @include transition-property(all);
+		  @include transition-duration(0.2s);
+		  @include transition-timing-function(ease-out);
+	   }
+    }
+    
+    a.miniLogo {
+	    font-family: 'Ostrich Sans Inline', Wire One, sans-serif;
+	    font-size: 30px;
+	    font-weight: 100;
+		@include skew( 0deg, -12deg );
+		color: #C1C9D1;
+		letter-spacing: -1px;
+		margin-left: 0px; 
+		
+		&:hover {
+		   color: #efd128;
+		  @include transition-property(all);
+		  @include transition-duration(0.2s);
+		  @include transition-timing-function(ease-out);
+	   }
+    }
+    
+    
+	@include transition-property(all);
+	  @include transition-duration(0.2s);
+	  @include transition-timing-function(ease-out);
+}
+
+
+    .menu-link span {
+        position: relative;
+        display: block;
+    }
+
+    .menu-link span,
+    .menu-link span:before,
+    .menu-link span:after {
+        background-color: #fff;
+        width: 100%;
+        height: 0.2em;
+    }
+
+        .menu-link span:before,
+        .menu-link span:after {
+            position: absolute;
+            margin-top: -0.6em;
+            content: " ";
+        }
+
+        .menu-link span:after {
+            margin-top: 0.6em;
+        }
+
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+/*
+Hides the menu at `767px`, but modify this based on your app's needs.
+*/
+@media (max-width: 767px) {
+
+    .header {
+        text-align: left;
+    }
+
+    /*
+    Navigation Push styles.
+    */
+    #layout {
+        position: relative;
+        padding-left: 0;
+    }
+        #layout.active {
+            position: relative;
+            left: 280px;
+        }
+            #layout.active #menu {
+                left: 280px;
+                width: 280px;
+            }
+
+    #menu {
+        left: 0;
+    }
+
+    .menu-link {
+        position: fixed;
+        left: 0;
+        display: block; /* show the button on small screens */
+    }
+
+    #layout.active .menu-link {
+        left: 280px;
+    }
+}
+
+
+/* !일반 스타일 */
+
+/* !로고 */
+.logo {
+	width: 240px;
+/*
+	background: #16181A;
+	@include border-radius(50%);
+	@include box-shadow( 0px 1px 10px #000,0px 0px 0px 2px #16181A inset, 0px 0px 0px 4px #9EA4AB inset);
+*/
+	padding: 0;
+	margin:  0 auto;
+	margin-top: 26px;
+	
+	span.big {
+		position: absolute;
+			font-family: 'Ostrich Sans Inline', Wire One, sans-serif;
+	font-weight: 100;
+	font-size:60px;
+		@include skew( 0deg, -12deg );
+		top: 125px;
+		left: 53px;
+		color: #C1C9D1;
+		letter-spacing: -1px;
+	}
+	
+	span.small {
+		font-family: 'Ostrich Sans', Wire One, sans-serif;
+		font-weight: 400;
+		position: absolute;
+		@include skew( 0deg, -12deg );
+		top: 165px;
+		left: 58px;
+	}
+}
+
+/* !문구 */
+div.message {
+	padding-left: 26px;
+	display: block;
+	p {
+		color: #16181a;
+		font-family: 'Ostrich Sans', Wire One, sans-serif;
+		font-weight: 400;
+		font-size: 1.688em;
+		line-height: 1px;
+		text-shadow: 0px 1px #424547;
+		text-align: left;
+	}
+}
+
+div.skininfo {
+	padding-left: 26px;
+	margin-bottom: 26px;
+	display: block;
+	p {
+	color: #C1C9D1 - 100;
+	font-family: 'Ostrich Sans', Wire One, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 16px;
+	text-align: left;
+	margin-bottom: -15px;
+	text-shadow: 0px -2px #16181a;
+	}
+	
+	a {
+		display: inline;
+		margin: 0;
+		padding: 0;
+		color: #efd128;
+	}
+}
+
+/* !기본 카테고리 스타일 리셋 */
+div.pure-menu {
+	
+	ul.widget_content {
+		left: 0;
+		top: 0;
+		margin: auto;
+		padding: auto;
+		position: relative;
+		visibility: visible;		
+	}
+}
+
+
+/* !카테고리 */
+div.menu_category {
+	text-align: left;
+	padding-left: 26px;
+	color: #B9C1C8;
+	h3 {
+		text-align: left;
+		color: transparent;
+		
+		&:before {
+			content: "category";
+			font-family: 'Ostrich Sans', Wire One, sans-serif;
+			font-weight: 700;
+			font-size: 50px;
+			color: #B9C1C8;
+			display: block;
+			margin-top: 30px;
+			margin-bottom: -10px;
+			
+		}
+	}
+	
+	a {
+		font-family: $eng-font;
+		font-size: 20px;
+		line-height: 27px;
+		padding: 0;
+		margin: 0;
+		display: inline;
+		margin-left: 10px;
+		font-weight: 100;
+		color: #B9C1C8;
+				
+		
+		&:hover {
+			color: #efd128;
+			background: none;
+		  @include transition-property(all);
+		  @include transition-duration(0.2s);
+		  @include transition-timing-function(ease-in);
+
+		}
+	}
+	
+	span.count {
+		font-size: 20px;
+		font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+	}
+}
+
+/* !이글루스 스타일 */
+
+.content_wrap {
+	margin-top: 34px;
+}
+
+div.content {
+	margin: 0;
+	padding: 0 5%;
+	overflow: hidden;
+}
+
+div.post_content {
+	overflow: visible;
+}
+
+.post_view .post_content {
+	overflow: visible;
+}
+
+/* ! 반응형 이미지  */
+div.post_view {
+	overflow: visible;
+	margin-top: 4em;
+	margin-bottom: 4em;
+	div.hentry{
+		img {
+			width: 112%;
+			height: auto;
+			margin-left: -7%;
+			margin-right: -8%;
+			max-width: 112%;
+		}
+	}
+}
+
+
+/* !유틸리티 */
+iframe, object, embed { max-width:100%; }
+
+/* !제목 */
+
+div.post_title {
+	margin-bottom: 20px;
+}
+
+h2.entry-title {
+	font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif;
+	font-size: 93px;
+	line-height: 93px;
+	font-weight: 900;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	height: 85px;
+	margin-bottom: 1em;
+	
+	a{
+		color: #2D3134;
+		text-decoration: none;
+	}
+}
+
+span.post_title_category {
+	display: none;
+}
+
+ul.post_info {
+	margin-top: 1em;
+	font-size: 50px;
+	color: #D5D5D6;
+	
+		span.txt {
+		display: none !important;
+		}
+	
+	li {
+		font-family: 'Ostrich Sans', Wire One, Nanum Gothic,  sans-serif !important;
+		font-weight: 300;		
+	}
+	li.post_info_link {
+		display: none;
+	}
+	
+	li.post_info_cmtcount {
+		span.txt {
+			display: none;
+		}
+		
+		&:before {
+			content: "comments";
+		}
+	}
+}
+
+/* !저자 표시 */
+span.by {
+	font-family: 'Ostrich Sans', Wire One, Nanum Gothic,  sans-serif !important;
+	font-weight: 300;
+}
+
+.post_view .post_info {
+	font-size: 50px;
+}
+
+/* !포스트 메타 정보 */
+div.post_meta_area {
+	display: none;
+}
+
+/* !태그 */
+div.post_taglist {
+	background: none;
+	font-family: $default-font;
+	font-size: 14px;
+	
+	&:before {
+		content: "tags";
+		font-family: $eng-font;
+	}
+}
+
+
+/* !프로필 */
+div.profile_image {
+	img {
+		@include border-radius (50%);
+		border: 0px;
+	}
+}
+
+.menu_profile .profile_image img {
+	border: 10px solid rgba(0,0,0,.5);
+}
+
+span.profile_usernick {
+	color: #B9C1C8;
+	font-family: Ostrich sans;
+	font-size: 22px;
+	line-height: 24px;
+	span.by {
+		display: none;
+	}
+}
+
+.menu_profile .profile_desc .profile_usernick {
+	color: #B9C1C8;
+	font-family: Ostrich sans;
+	font-size: 22px;
+	line-height: 24px;
+	margin: 0;
+}
+
+/* !트렉백 주소 */
+.post_trackback .trackback_help em {
+	font-famliy:'Ostrich Sans Rounded', Wire One !important;
+	font-size: 18px;
+	font: $eng-font !important;
+}
+
+div.post_footer_area {
+	font-size: 1em;
+}
+
+/* !코맨트 */
+div.post_comment{
+	a {
+		color: $text-color;
+	}
+}
+
+li.comment_item{
+	
+	span.comment_gravatar {
+		img {
+			@include border-radius(50%);
+		}
+	}
+}
+
+li.comment_reply {
+	background: none;
+	span.comment_gravatar {
+		img {
+			@include border-radius(50%);
+			width: 50px;
+			height: 50px;			
+			border: 0px;
+		}
+	}
+}
+
+.post_comment .comment_list li.comment_reply {
+	background: none;
+}
+
+.post_comment .comment_list h4.comment_writer_info span.comment_gravatar img {
+	border: 0px;
+}
+
+.post_comment .comment_list li.comment_reply h4.comment_writer_info span.comment_gravatar img {
+	width: 50px;
+	height: 50px;
+	border: 0px;
+}
+
+.post_comment .comment_write .comment_info span.comment_now img {
+	width: 50px;
+	height: 50px;
+	border: 0px;
+}
+
+span.comment_datetime {
+	font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+	font-size: 20px;
+}
+
+div.comment_write {
+	fieldset {
+		border: 0px;
+		
+		input {
+			@include border-radius(5px);
+			outline: 0;
+			border: 1px solid #ddd;
+			background: #ddd;
+			
+			&:focus {
+				background: #fff;
+					 @include transition-property(all);
+				  @include transition-duration(0.2s);
+				  @include transition-timing-function(ease-in);
+			}
+		}
+		
+		textarea {
+			@include border-radius(5px);
+			outline: 0;
+			border: 1px solid #ddd;
+			background: #ddd;
+			
+			&:focus  {
+			  background: #fff;
+			  @include transition-property(all);
+			  @include transition-duration(0.2s);
+			  @include transition-timing-function(ease-in);
+			}
+		}
+	}
+}
+
+
+
+div.comment_info {
+	span.comment_now{
+		img {
+			@include border-radius(50%);
+			width: 50px;
+			height: 50px;
+		}
+		
+
+	}
+}
+
+// define it
+@mixin selection {
+    ::-moz-selection { @content; }
+    ::selection { @content; }
+}
+
+// use it
+@include selection {
+    color: #EFD128;
+    background: #2D3135;
+}
+
+
+/* !사이드바 */
+
+/* !카운터 */
+div.widget_statWgt_b {
+	margin: 1em 0;
+	width: 180px;
+	margin: 0 auto;
+	color: #B9C1C8;
+	
+	div.widget_content {
+		background: transparent;
+		font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+		color: transparent;
+	}
+	
+	a {
+		display: none;
+	}
+}
+
+.widget_statWgt_b .widget_content .statWgt_count_b strong {
+	color: #B9C1C8;
+	font-family: 'Ostrich Sans', Wire One, sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	&:before {
+		content: "Today";
+		font-family: 'Ostrich Sans', Wire One, sans-serif;
+		font-size: 30px;
+		color: #B9C1C8;
+		display: block;
+		margin-top: 30px;
+		margin-bottom: -10px;
+		font-weight: 400;		
+	}
+}
+
+.widget_statWgt_b .widget_content .statWgt_count_b {
+	color: transparent;
+}
+
+div.statWgt_count_b {
+	font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+	
+}
+
+/* !달력 */
+div.menu_calendar {
+	font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+	font-size: 20px;
+	width: 160px;
+	margin: 0 auto;
+}
+
+div.cal_month {
+	font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+	font-size: 20px;
+	
+	a {
+		padding: 0;
+	}	
+}
+
+/* !달력 글씨 */
+.menu_calendar .tb_cal th {
+	font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+	font-size: 20px;
+}
+
+.menu_calendar .tb_cal td.on a { 
+	font-weight: 900;
+	text-decoration: underline; 
+	font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+	font-size: 20px;		
+}
+
+.menu_calendar .tb_cal td.today {
+	color: #efd128;
+	font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+	font-size: 20px;	
+}
+
+.menu_calendar .tb_cal td {
+		font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+	font-size: 20px;
+}
+
+/* !태그 */
+div.menu_tagcloud {
+	text-align: left;
+	padding: 0 26px;
+	color: #B9C1C8;
+	h3 {
+	text-align: left;
+	color: transparent;
+		
+		&:before {
+			content: "Tags";
+			font-family: 'Ostrich Sans', Wire One, sans-serif;
+			font-weight: 700;
+			font-size: 50px;
+			color: #B9C1C8;
+			display: block;
+			margin-top: 30px;
+			margin-bottom: -10px;
+		}
+	}
+
+	div.widget_content {
+		clear: both;
+		
+		a {
+			float: left;
+		}
+	}
+
+}
+
+/* !메뉴릿 */
+div.menu_selfmenu {
+	text-align: left;
+	padding-left: 26px;
+	color: #B9C1C8;
+	h3 {
+	text-align: left;
+	color: transparent;
+		
+		&:before {
+			content: "Menus";
+			font-family: 'Ostrich Sans', Wire One, sans-serif;
+			font-weight: 700;
+			font-size: 50px;
+			color: #B9C1C8;
+			display: block;
+			margin-top: 30px;
+			margin-bottom: -10px;
+		}
+	}
+	
+	ul.widget_content {
+		li {
+			text-align: left;
+		}
+	}
+	
+	a {
+	font-family: $eng-font;
+	font-size: 20px;
+	line-height: 27px;
+	padding: 0;
+	margin: 0;
+	display: inline;
+	margin-left: 10px;
+	font-weight: 100;
+	color: #B9C1C8;
+				
+		
+		&:hover {
+			color: #efd128;
+			background: none;
+		  @include transition-property(all);
+		  @include transition-duration(0.2s);
+		  @include transition-timing-function(ease-in);
+
+		}
+	}
+		
+}
+
+/* !포토로그 주소 */
+div.photolog_name {
+	text-align: left;
+	padding: 0 26px;
+	color: #B9C1C8;	
+	a {
+	font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+	font-size: 30px;
+	line-height: 27px;
+	padding: 0;
+	margin: 0;
+	display: inline;
+	margin-left: 10px;
+	font-weight: 100;
+	color: #B9C1C8;
+				
+		
+		&:hover {
+			color: #efd128;
+			background: none;
+		  @include transition-property(all);
+		  @include transition-duration(0.2s);
+		  @include transition-timing-function(ease-in);
+
+		}
+	}
+}
+
+/* !아카이브 */
+div.menu_archive {
+	text-align: left;
+	padding-left: 26px;
+	color: #B9C1C8;
+	h3 {
+	text-align: left;
+	color: transparent;
+		
+		&:before {
+			content: "Archive";
+			font-family: 'Ostrich Sans', Wire One, sans-serif;
+			font-weight: 700;
+			font-size: 50px;
+			color: #B9C1C8;
+			display: block;
+			margin-top: 30px;
+			margin-bottom: -10px;
+		}
+	}
+	
+	a {
+		font-family: $eng-font;
+		font-size: 20px;
+		line-height: 27px;
+		padding: 0;
+		margin: 0;
+		display: inline;
+		margin-left: 10px;
+		font-weight: 100;
+		color: #B9C1C8;
+				
+		
+		&:hover {
+			color: #efd128;
+			background: none;
+		  @include transition-property(all);
+		  @include transition-duration(0.2s);
+		  @include transition-timing-function(ease-in);
+
+		}
+	}
+	
+	span.count {
+		font-size: 20px;
+		font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+	}	
+		
+}
+
+/* ! 사이드바 스타일 리셋 */
+div.pure-menu {
+	
+	ul{
+		left: 0;
+		top: 0;
+		margin: auto;
+		padding: auto;
+		position: relative;
+		visibility: visible;		
+	}
+}
+
+/* !블로그롤 */
+div.menu_blogroll {
+	text-align: left;
+	padding: 0 26px;
+	color: #B9C1C8;
+	h3 {
+	text-align: left;
+	color: transparent;
+		
+		&:before {
+			content: "Links";
+			font-family: 'Ostrich Sans', Wire One, sans-serif;
+			font-weight: 700;
+			font-size: 50px;
+			color: #B9C1C8;
+			display: block;
+			margin-top: 30px;
+			margin-bottom: -10px;
+		}
+	}
+			
+}
+
+
+
+/* !링크 사진 */
+.menu_blogroll li .blogroll_gravatar img { 
+	@include border-radius (50%);
+	border: 0;
+	background: none;
+	
+}
+
+.pure-menu a {
+	border: 0;
+}
+
+/* !트랙백 */
+div.menu_trackback {
+	text-align: left;
+	padding: 0 26px;
+	color: #B9C1C8;
+	h3 {
+	text-align: left;
+	color: transparent;
+		
+		&:before {
+			content: "Trackbacks";
+			font-family: 'Ostrich Sans', Wire One, sans-serif;
+			font-weight: 700;
+			font-size: 50px;
+			color: #B9C1C8;
+			display: block;
+			margin-top: 30px;
+			margin-bottom: -10px;
+		}
+	}
+		
+}
+
+/* !핑백 */
+div.menu_pingback {
+	text-align: left;
+	padding: 0 26px;
+	color: #B9C1C8;
+	h3 {
+	text-align: left;
+	color: transparent;
+		
+		&:before {
+			content: "Pingback";
+			font-family: 'Ostrich Sans', Wire One, sans-serif;
+			font-weight: 700;
+			font-size: 50px;
+			color: #B9C1C8;
+			display: block;
+			margin-top: 30px;
+			margin-bottom: -10px;
+		}
+	}
+		
+}
+
+/* !코맨트 */
+div.menu_comment {
+	text-align: left;
+	padding: 0 26px;
+	color: #B9C1C8;
+	h3 {
+	text-align: left;
+	color: transparent;
+		
+		&:before {
+			content: "Comments";
+			font-family: 'Ostrich Sans', Wire One, sans-serif;
+			font-weight: 700;
+			font-size: 50px;
+			color: #B9C1C8;
+			display: block;
+			margin-top: 30px;
+			margin-bottom: -10px;
+		}
+	}
+		
+}
+
+/* !라이프로그 */
+div.menu_lifelog {
+	text-align: left;
+	padding-left: 26px;
+	color: #B9C1C8;
+	h3 {
+	text-align: left;
+	color: transparent;
+		
+		&:before {
+			content: "Life Log";
+			font-family: 'Ostrich Sans', Wire One, sans-serif;
+			font-weight: 700;
+			font-size: 50px;
+			color: #B9C1C8;
+			display: block;
+			margin-top: 30px;
+			margin-bottom: -10px;
+		}
+	}
+		
+}
+
+/* !포토로그 */
+div.menu_photolog {
+	text-align: left;
+	padding-left: 26px;
+	color: #B9C1C8;
+	h3 {
+	text-align: left;
+	color: transparent;
+		
+		&:before {
+			content: "Photo log";
+			font-family: 'Ostrich Sans', Wire One, sans-serif;
+			font-weight: 700;
+			font-size: 50px;
+			color: #B9C1C8;
+			display: block;
+			margin-top: 30px;
+			margin-bottom: -10px;
+		}
+	}
+		
+}
+
+/* !검색 */
+div.menu_search {
+	text-align: left;
+	padding-left: 26px;
+	color: #B9C1C8;
+	fieldset {
+		border: 0;
+	}
+	
+	input.input_search {
+		border: 0;
+		background: #16181A;
+		color: #B9C1C8;
+		font-size: 32px;
+		font-family: $default-font;
+		width: 100px;
+		outline: 0;
+		height: 20px;
+		
+		&:focus {
+			background: #efd128;
+			color: #2D3135;
+			width: 150px;
+		  @include transition-property(all);
+		  @include transition-duration(0.2s);
+		  @include transition-timing-function(ease-in);			
+		}
+	}
+	
+	input.submit {
+		border: 0;
+		outline: 0;
+		height: 40px;
+		width: 40px;
+		background-color: red;
+		background: #0054a7 url(http://pds25.egloos.com/pds/201312/28/26/a0205726_52bdd673ddaa8.png) no-repeat 12px 10px;
+		@include squish-text;
+		margin-left: -2px;
+		
+		&:hover {
+			background: #e84c00 url(http://pds25.egloos.com/pds/201312/28/26/a0205726_52bdd673ddaa8.png) no-repeat 12px 10px;
+					  @include transition-property(all);
+		  @include transition-duration(0.2s);
+		  @include transition-timing-function(ease-in);	
+		}
+	}
+	
+	p {
+		display: none;
+	}
+}
+
+div.menu_search input.input_search {
+	height: 40px;
+	width: 120px;
+}
+
+
+.pure-menu a {
+	padding: 0;
+	background: none;
+	@include link-colors(#B9C1C8, #e84c00, #00cfe8, #C1C9D1, #00e89e );
+	
+	&:hover {
+			color: #efd128;
+			background: none;
+		  @include transition-property(all);
+		  @include transition-duration(0.2s);
+		  @include transition-timing-function(ease-in);
+	}
+}
+
+.pure-menu li a {
+	padding: 0;
+	background: none;
+	@include link-colors(#B9C1C8, #e84c00, #00cfe8, #C1C9D1, #00e89e );
+	
+	&:hover {
+			color: #efd128;
+			background: none;
+		  @include transition-property(all);
+		  @include transition-duration(0.2s);
+		  @include transition-timing-function(ease-in);
+	}
+}
+
+/* !태그 클라우드 */
+div.post_tagcloud {
+	margin-bottom: 2em;
+	h2.page_title {
+		text-align: left;
+		color: transparent;
+		
+		&:before {
+			content: "Tag Cloud";
+			font-family: 'Ostrich Sans', Wire One, sans-serif;
+			font-size: 93px;
+			line-height: 93px;
+			font-weight: 900;
+			display: block;
+			text-align: left;
+			color: #2D3135;			
+		}
+	}
+	
+	span {
+		text-align: left;
+	}
+	
+	a{
+		font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif;
+		font-size: 30px;
+		text-align: left;
+		
+		&:after {
+			content: ",";
+			font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif;
+			font-size: 30px;
+		}
+	}
+}
+
+/* !검색결과 */
+div.search_wrap {
+	div.search {
+		background: transparent ;
+		border: 0 ;
+	}
+	
+	p.powered {
+		display: none ;
+	}
+	
+	input#srch_kwd {
+		width: 500px ;
+		height: 150px ;
+		background: #ddd ;
+		outline: 0 ;
+		font-size: 90px ;
+		font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif ;
+		font-style: bold ;
+		
+		&:focus {
+			background: red ;
+		}
+	}	
+}
+
+.s_box .search {
+		background: transparent !important;
+		border: 0 !important;	
+}
+
+.s_box .search .inner  {
+	background: transparent !important;
+	border: 0 !important;
+	width: 100% !important;
+	height: auto !important;
+	margin: 0 !important;
+	margin-bottom: 20px !important;
+}
+
+/* !버튼 */
+.s_box .search .inner button {
+	float: left !important;
+	width: 10% !important;
+	height: 100px !important;
+	background: #0054A7 !important;
+	font-size: 50px !important;
+	color: #fff !important;
+	margin-top: 1px !important;
+}
+
+/* !검색폼 */
+input#srch_kwd {
+	width: 20% ;
+	height: 80px ;
+	background: #ddd !important ;
+	outline: 0 ;
+	font-size: 90px ;
+	font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif ;
+	font-style: bold ;
+	height: 80px;
+	padding: 10px;
+	line-height: 90px;
+	
+	&:focus {
+		background: #0054A7 !important;
+		color: white;
+		width: 80%; 
+		  @include transition-property(all);
+		  @include transition-duration(0.5s);
+		  @include transition-timing-function(ease-in);		
+	}
+}
+
+.s_box .search .inner input  {
+	border: 0px;
+}
+
+p.powered {
+	display: none;
+}	
+
+.search_result .news_sort_option li.selected a {
+	border: 0;
+	background: transparent !important;
+	-moz-box-shadow: transparent !important;
+	-webkit-box-shadow: transparent !important;
+	box-shadow: transparent !important;	
+}
+
+.search_result .news_sort_option li a {
+	border: 0;
+	color: t
+}
+
+/* !검색결과 숫자 색상 */
+.search_result p strong {
+	color: #0054A7 !important;
+}
+
+/* !검색 결과 섬네일 */
+.type_01 .thumb .thumb_photo {
+	@include border-radius(10px);
+}
+
+/* !검색 결과 제목 */
+.type_01 dt a {
+	font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif ;
+	font-size: 30px;
+	line-height: 32px;
+	font-weight: 100;
+		color: #2D3134;
+	text-decoration: none !important;
+}
+
+/* !검색결과 날짜 */
+.type_01 dd.txt_date {
+	text-align: right;
+	font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif !important;
+	color: #2D3134;
+	font-size: 30px !important;
+	float: right;
+}
+
+/* !페이징 표시 테두리 */
+.type_01 {
+	border: 0 !important;
+}
+
+.paging a {
+	border: 0 !important;
+	font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif !important;
+	font-size: 30px !important;
+	font-weight: 100 !important;
+}
+
+.paging a.first {
+	border: 0 !important;
+}
+
+.paging a.on {
+	background: none !important;
+	border: 0 !important;
+}
+
+
+/* !아카이브 리스트 */
+h2.page_title {
+	span.title {
+		text-align: left;
+		font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif !important;
+		font-size: 64px;
+		line-height: 80px;
+		font-weight: 900;
+		float: left;		
+	}
+	
+	span.action_view_select {
+		a {
+			background: none;
+		}
+	}
+}
+
+div.common_top_list {
+	ul.f_clear {
+	text-align: left;		
+		li {
+			a {
+				text-align: left;
+				font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif !important;
+				color: #2D3134;
+				font-size: 40px;
+			}
+			
+			span.count {
+				text-align: left;
+			}
+			
+			span.date {
+				font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif !important;
+			}
+		}
+	}
+}
+
+div.post_summary {
+	h2.entry-title {
+		text-align: left;
+	}
+	ul.post_info {
+		text-align: left;
+		font-size: 50px;
+		color: #D5D5D6;
+	}
+	
+	div.post_content {
+		text-align: left;
+		margin-top: 1em;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+a.sumlist, a.sumview {
+	background: none !important;
+}
+
+/* !페이지 */
+.post_paging .page  {
+	font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif ;
+	font-size: 30px;
+	font-weight: 100;
+}

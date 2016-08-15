@@ -1,0 +1,782 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://yui.yahooapis.com/pure/0.3.0/pure-min.css);
+@import url(http://fonts.googleapis.com/css?family=Wire+One);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 61, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%; }
+
+/* line 64, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.625em; }
+
+/* Ostrich Sans */
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url(http://pds21.egloos.com/pds/201312/26/26/ostrich-black.eot);
+  src: local("☺"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-black.woff) format("woff"), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-black.ttf) format("truetype"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-black.svg) format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url(http://pds21.egloos.com/pds/201312/26/26/ostrich-bold.eot);
+  src: local("☺"), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-bold.woff) format("woff"), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-bold.ttf) format("truetype"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-bold.svg) format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url(http://pds26.egloos.com/pds/201312/26/26/ostrich-regular.eot);
+  src: local("☺"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-regular.woff) format("woff"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-regular.ttf) format("truetype"), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-regular.svg) format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url(http://pds27.egloos.com/pds/201312/26/26/ostrich-light.eot);
+  src: local("☺"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-light.woff) format("woff"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-light.ttf) format("truetype"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-light.svg) format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+/* Ostrich Sans Rounded */
+@font-face {
+  font-family: 'Ostrich Sans Rounded';
+  src: url(http://pds27.egloos.com/pds/201312/26/26/ostrich-rounded.eot);
+  src: local("☺"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-rounded.woff) format("woff"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-rounded.ttf) format("truetype"), url(http://pds26.egloos.com/pds/201312/26/26/ostrich-rounded.svg) format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+/* Ostrich Sans Inline */
+@font-face {
+  font-family: 'Ostrich Sans Inline';
+  src: url(http://pds27.egloos.com/pds/201312/26/26/ostrich-sans-inline-regular.eot);
+  src: local("☺"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-regular.woff) format("woff"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-regular.ttf) format("truetype"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-regular.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ostrich Sans Inline';
+  src: url(http://pds26.egloos.com/pds/201312/26/26/ostrich-sans-inline-italic.eot);
+  src: local("☺"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-italic.woff) format("woff"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-italic.ttf) format("truetype"), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-sans-inline-italic.svg) format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+/* line 84, ../sass/style.scss */
+html {
+  font-size: 16px;
+  line-height: 24px; }
+
+/* line 89, ../sass/style.scss */
+body {
+  color: #2D3135;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1em; }
+
+/* line 95, ../sass/style.scss */
+a {
+  color: #0054a7;
+  text-decoration: none; }
+  /* line 18, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:visited {
+    color: #c1c9d1; }
+  /* line 21, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:focus {
+    color: #00e89e; }
+  /* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:hover {
+    color: #e84c00; }
+  /* line 27, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:active {
+    color: #00cfe8; }
+
+/*
+Add transition to containers so they can push in and out.
+*/
+/* line 105, ../sass/style.scss */
+#layout,
+#menu,
+.menu-link {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+
+/*
+This is the parent `<div>` that contains the menu and the content area.
+*/
+/* line 116, ../sass/style.scss */
+#layout {
+  padding-left: 280px;
+  /* left col width "#menu" */
+  left: 0; }
+
+/*
+The content `<div>` is where all your content goes.
+*/
+/*
+.content {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 800px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+}
+*/
+/* line 134, ../sass/style.scss */
+.header {
+  margin: 0;
+  color: #333;
+  text-align: center;
+  padding: 2.5em 2em 0;
+  border-bottom: 1px solid #eee; }
+
+/* line 141, ../sass/style.scss */
+.header h1 {
+  margin: 0.2em 0;
+  font-size: 3em;
+  font-weight: 300; }
+
+/* line 146, ../sass/style.scss */
+.header h2 {
+  font-weight: 300;
+  color: #ccc;
+  padding: 0;
+  margin-top: 0; }
+
+/* line 153, ../sass/style.scss */
+.content-subhead {
+  margin: 50px 0 20px 0;
+  font-weight: 300;
+  color: #888; }
+
+/*
+The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+appears on the left side of the page.
+
+By using the combination of `position: fixed; top: 0; bottom:0;`, we can make
+the menu have 100% height and be fixed on the page as the rest of it scrolls.
+*/
+/* line 166, ../sass/style.scss */
+#menu {
+  margin-left: -280px;
+  /* this should be "#menu" width */
+  width: 280px;
+  position: fixed;
+  top: 0;
+  left: 280px;
+  /* this should be "#menu" width */
+  bottom: 0;
+  z-index: 1;
+  /* so the menu or its navicon stays above all content */
+  background: #2D3135;
+  overflow-y: auto;
+  -webkit-overflow-scroll: touch;
+  /* for smooth scrolling on mobile */
+  color: #C1C9D1;
+  padding: 0; }
+
+/*
+All anchors inside the menu should be styled like this.
+*/
+/*
+Remove all background/borders, since we are applying them to #menu.
+*/
+/* line 188, ../sass/style.scss */
+#menu .pure-menu,
+#menu .pure-menu ul {
+  border: none;
+  background: transparent; }
+
+/* -- Dynamic Button For Responsive Menu -------------------------------------*/
+/*
+The button to open/close the Menu is custom-made and not part of Pure. Here's
+how it works:
+*/
+/*
+`.menu-link` represents the responsive menu toggle that shows/hides on
+small screens.
+*/
+/* line 206, ../sass/style.scss */
+.menu-link {
+  display: none;
+  /* show this only on small screens */
+  top: 0;
+  left: 280px;
+  /* `#menu`'s width */
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+  /* change this value to increase/decrease button size */
+  z-index: 9999999;
+  width: 100%;
+  height: auto;
+  padding: 10px 10px 5px 10px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+  /* line 217, ../sass/style.scss */
+  .menu-link:hover {
+    background: black;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  /* line 224, ../sass/style.scss */
+  .menu-link a {
+    font-family: 'Ostrich Sans Rounded', Wire One, Nanum Gothic, sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+    color: #C1C9D1; }
+    /* line 230, ../sass/style.scss */
+    .menu-link a:hover {
+      color: #efd128;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-out;
+      -moz-transition-timing-function: ease-out;
+      -o-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+  /* line 238, ../sass/style.scss */
+  .menu-link a.miniLogo {
+    font-family: 'Ostrich Sans Inline', Wire One, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    -webkit-transform: skew(0deg, -12deg);
+    -moz-transform: skew(0deg, -12deg);
+    -ms-transform: skew(0deg, -12deg);
+    -o-transform: skew(0deg, -12deg);
+    transform: skew(0deg, -12deg);
+    color: #C1C9D1;
+    letter-spacing: -1px;
+    margin-left: 0px; }
+    /* line 247, ../sass/style.scss */
+    .menu-link a.miniLogo:hover {
+      color: #efd128;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-out;
+      -moz-transition-timing-function: ease-out;
+      -o-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+
+/* line 262, ../sass/style.scss */
+.menu-link span {
+  position: relative;
+  display: block; }
+
+/* line 269, ../sass/style.scss */
+.menu-link span,
+.menu-link span:before,
+.menu-link span:after {
+  background-color: #fff;
+  width: 100%;
+  height: 0.2em; }
+
+/* line 276, ../sass/style.scss */
+.menu-link span:before,
+.menu-link span:after {
+  position: absolute;
+  margin-top: -0.6em;
+  content: " "; }
+
+/* line 282, ../sass/style.scss */
+.menu-link span:after {
+  margin-top: 0.6em; }
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+/*
+Hides the menu at `767px`, but modify this based on your app's needs.
+*/
+@media (max-width: 767px) {
+  /* line 294, ../sass/style.scss */
+  .header {
+    text-align: left; }
+
+  /*
+  Navigation Push styles.
+  */
+  /* line 301, ../sass/style.scss */
+  #layout {
+    position: relative;
+    padding-left: 0; }
+
+  /* line 305, ../sass/style.scss */
+  #layout.active {
+    position: relative;
+    left: 280px; }
+
+  /* line 309, ../sass/style.scss */
+  #layout.active #menu {
+    left: 280px;
+    width: 280px; }
+
+  /* line 314, ../sass/style.scss */
+  #menu {
+    left: 0; }
+
+  /* line 318, ../sass/style.scss */
+  .menu-link {
+    position: fixed;
+    left: 0;
+    display: block;
+    /* show the button on small screens */ }
+
+  /* line 324, ../sass/style.scss */
+  #layout.active .menu-link {
+    left: 280px; } }
+/* !일반 스타일 */
+/* !로고 */
+/* line 333, ../sass/style.scss */
+.logo {
+  width: 212px;
+  height: 212px;
+  background: #16181A;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 1px 10px black, 0px 0px 0px 2px #16181a inset, 0px 0px 0px 4px #9ea4ab inset;
+  -moz-box-shadow: 0px 1px 10px black, 0px 0px 0px 2px #16181a inset, 0px 0px 0px 4px #9ea4ab inset;
+  box-shadow: 0px 1px 10px black, 0px 0px 0px 2px #16181a inset, 0px 0px 0px 4px #9ea4ab inset;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 26px; }
+  /* line 343, ../sass/style.scss */
+  .logo span.big {
+    position: absolute;
+    font-family: 'Ostrich Sans Inline', Wire One, sans-serif;
+    font-weight: 100;
+    font-size: 60px;
+    -webkit-transform: skew(0deg, -12deg);
+    -moz-transform: skew(0deg, -12deg);
+    -ms-transform: skew(0deg, -12deg);
+    -o-transform: skew(0deg, -12deg);
+    transform: skew(0deg, -12deg);
+    top: 125px;
+    left: 50px;
+    color: #C1C9D1;
+    letter-spacing: -1px; }
+  /* line 355, ../sass/style.scss */
+  .logo span.small {
+    font-family: 'Ostrich Sans', Wire One, sans-serif;
+    font-weight: 400;
+    position: absolute;
+    -webkit-transform: skew(0deg, -12deg);
+    -moz-transform: skew(0deg, -12deg);
+    -ms-transform: skew(0deg, -12deg);
+    -o-transform: skew(0deg, -12deg);
+    transform: skew(0deg, -12deg);
+    top: 165px;
+    left: 58px; }
+
+/* !문구 */
+/* line 366, ../sass/style.scss */
+div.message {
+  padding-left: 26px; }
+  /* line 368, ../sass/style.scss */
+  div.message p {
+    color: #16181a;
+    font-family: 'Ostrich Sans', Wire One, sans-serif;
+    font-weight: 400;
+    font-size: 1.688em;
+    line-height: 0px;
+    text-shadow: 0px 1px #424547;
+    text-align: left; }
+
+/* line 379, ../sass/style.scss */
+div.skininfo {
+  padding-left: 26px;
+  margin-bottom: 26px; }
+  /* line 382, ../sass/style.scss */
+  div.skininfo p {
+    color: #5d656d;
+    font-family: 'Ostrich Sans', Wire One, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: left;
+    margin-bottom: -15px;
+    text-shadow: 0px -2px #16181a; }
+  /* line 393, ../sass/style.scss */
+  div.skininfo a {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    color: #efd128; }
+
+/* !기본 카테고리 스타일 리셋 */
+/* line 404, ../sass/style.scss */
+div.pure-menu ul.widget_content {
+  left: 0;
+  top: 0;
+  margin: auto;
+  padding: auto;
+  position: relative;
+  visibility: visible; }
+
+/* !카테고리 */
+/* line 416, ../sass/style.scss */
+div.menu_category {
+  text-align: left;
+  padding-left: 26px;
+  color: #B9C1C8; }
+  /* line 420, ../sass/style.scss */
+  div.menu_category h3 {
+    text-align: left;
+    color: transparent; }
+    /* line 424, ../sass/style.scss */
+    div.menu_category h3:before {
+      content: "category";
+      font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+      font-size: 50px;
+      color: #B9C1C8;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: -10px;
+      font-weight: 100; }
+  /* line 436, ../sass/style.scss */
+  div.menu_category a {
+    font-family: "Ostrich Sans", Wire One, Nanum Gothic, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    margin-left: 10px;
+    font-weight: 100;
+    color: #B9C1C8; }
+    /* line 448, ../sass/style.scss */
+    div.menu_category a:hover {
+      color: #efd128;
+      background: none;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-in;
+      -moz-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+  /* line 458, ../sass/style.scss */
+  div.menu_category span.count {
+    font-size: 20px;
+    font-family: 'Ostrich Sans Rounded', Wire One, sans-serif; }
+
+/* !이글루스 스타일 */
+/* line 466, ../sass/style.scss */
+.content_wrap {
+  margin-top: 34px; }
+
+/* line 470, ../sass/style.scss */
+div.content {
+  margin: 0;
+  padding: 0 5%; }
+
+/* line 475, ../sass/style.scss */
+div.post_content {
+  overflow: visible; }
+
+/* line 479, ../sass/style.scss */
+.post_view .post_content {
+  overflow: visible; }
+
+/* ! 반응형 이미지  */
+/* line 484, ../sass/style.scss */
+div.post_view {
+  overflow: visible;
+  margin-top: 4em;
+  margin-bottom: 4em; }
+  /* line 489, ../sass/style.scss */
+  div.post_view div.hentry img {
+    width: 112%;
+    height: auto;
+    margin-left: -7%;
+    margin-right: -6%;
+    max-width: 112%; }
+
+/* !유틸리티 */
+/* line 501, ../sass/style.scss */
+iframe, object, embed {
+  max-width: 100%; }
+
+/* !제목 */
+/* line 505, ../sass/style.scss */
+div.post_title {
+  margin-bottom: 20px; }
+
+/* line 509, ../sass/style.scss */
+h2.entry-title {
+  font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif;
+  font-size: 93px;
+  line-height: 93px;
+  font-weight: 900;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  height: 85px;
+  margin-bottom: 1em; }
+  /* line 520, ../sass/style.scss */
+  h2.entry-title a {
+    color: #2D3134;
+    text-decoration: none; }
+
+/* line 526, ../sass/style.scss */
+span.post_title_category {
+  display: none; }
+
+/* line 530, ../sass/style.scss */
+ul.post_info {
+  margin-top: 1em;
+  font-size: 50px;
+  color: #D5D5D6; }
+  /* line 535, ../sass/style.scss */
+  ul.post_info span.txt {
+    display: none !important; }
+  /* line 539, ../sass/style.scss */
+  ul.post_info li {
+    font-family: 'Ostrich Sans', Wire One, Nanum Gothic,  sans-serif !important;
+    font-weight: 300; }
+  /* line 543, ../sass/style.scss */
+  ul.post_info li.post_info_link {
+    display: none; }
+  /* line 548, ../sass/style.scss */
+  ul.post_info li.post_info_cmtcount span.txt {
+    display: none; }
+  /* line 552, ../sass/style.scss */
+  ul.post_info li.post_info_cmtcount:before {
+    content: "comments"; }
+
+/* !저자 표시 */
+/* line 559, ../sass/style.scss */
+span.by {
+  font-family: 'Ostrich Sans', Wire One, Nanum Gothic,  sans-serif !important;
+  font-weight: 300; }
+
+/* line 564, ../sass/style.scss */
+.post_view .post_info {
+  font-size: 50px; }
+
+/* !포스트 메타 정보 */
+/* line 569, ../sass/style.scss */
+div.post_meta_area {
+  display: none; }
+
+/* !태그 */
+/* line 574, ../sass/style.scss */
+div.post_taglist {
+  background: none;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 14px; }
+  /* line 579, ../sass/style.scss */
+  div.post_taglist:before {
+    content: "tags";
+    font-family: "Ostrich Sans", Wire One, Nanum Gothic, sans-serif; }
+
+/* !프로필 */
+/* line 588, ../sass/style.scss */
+div.profile_image img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 0px; }
+
+/* line 594, ../sass/style.scss */
+.menu_profile .profile_image img {
+  border: 10px solid rgba(0, 0, 0, 0.5); }
+
+/* line 598, ../sass/style.scss */
+span.profile_usernick {
+  color: #B9C1C8;
+  font-family: Ostrich sans;
+  font-size: 22px;
+  line-height: 24px; }
+  /* line 603, ../sass/style.scss */
+  span.profile_usernick span.by {
+    display: none; }
+
+/* line 608, ../sass/style.scss */
+.menu_profile .profile_desc .profile_usernick {
+  color: #B9C1C8;
+  font-family: Ostrich sans;
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0; }
+
+/* !트렉백 주소 */
+/* line 617, ../sass/style.scss */
+.post_trackback .trackback_help em {
+  font-famliy: 'Ostrich Sans Rounded', Wire One !important;
+  font-size: 18px;
+  font: "Ostrich Sans", Wire One, Nanum Gothic, sans-serif !important; }
+
+/* line 623, ../sass/style.scss */
+div.post_footer_area {
+  font-size: 1em; }
+
+/* !코맨트 */
+/* line 629, ../sass/style.scss */
+div.post_comment a {
+  color: #2d3135; }
+
+/* line 637, ../sass/style.scss */
+li.comment_item span.comment_gravatar img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
+
+/* line 643, ../sass/style.scss */
+li.comment_reply {
+  background: none; }
+  /* line 646, ../sass/style.scss */
+  li.comment_reply span.comment_gravatar img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 0px; }
+
+/* line 655, ../sass/style.scss */
+.post_comment .comment_list li.comment_reply {
+  background: none; }
+
+/* line 659, ../sass/style.scss */
+.post_comment .comment_list h4.comment_writer_info span.comment_gravatar img {
+  border: 0px; }
+
+/* line 663, ../sass/style.scss */
+.post_comment .comment_list li.comment_reply h4.comment_writer_info span.comment_gravatar img {
+  width: 50px;
+  height: 50px;
+  border: 0px; }
+
+/* line 669, ../sass/style.scss */
+.post_comment .comment_write .comment_info span.comment_now img {
+  width: 50px;
+  height: 50px;
+  border: 0px; }
+
+/* line 675, ../sass/style.scss */
+span.comment_datetime {
+  font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+  font-size: 20px; }
+
+/* line 681, ../sass/style.scss */
+div.comment_write fieldset {
+  border: 0px; }
+  /* line 684, ../sass/style.scss */
+  div.comment_write fieldset input {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #ddd;
+    background: #ddd; }
+    /* line 690, ../sass/style.scss */
+    div.comment_write fieldset input:focus {
+      background: #fff;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-in;
+      -moz-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+  /* line 698, ../sass/style.scss */
+  div.comment_write fieldset textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #ddd;
+    background: #ddd; }
+    /* line 704, ../sass/style.scss */
+    div.comment_write fieldset textarea:focus {
+      background: #fff;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-in;
+      -moz-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+
+/* line 718, ../sass/style.scss */
+div.comment_info span.comment_now img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; }
+
+/* line 730, ../sass/style.scss */
+::-moz-selection {
+  color: #EFD128;
+  background: #2D3135; }
+
+/* line 731, ../sass/style.scss */
+::selection {
+  color: #EFD128;
+  background: #2D3135; }

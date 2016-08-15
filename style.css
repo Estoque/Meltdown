@@ -1,0 +1,1577 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://yui.yahooapis.com/pure/0.3.0/pure-min.css);
+@import url(http://fonts.googleapis.com/css?family=Wire+One);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 61, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%; }
+
+/* line 64, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.625em; }
+
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url(http://pds21.egloos.com/pds/201312/26/26/ostrich-black.eot);
+  src: local("☺"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-black.woff) format("woff"), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-black.ttf) format("truetype"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-black.svg) format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url(http://pds21.egloos.com/pds/201312/26/26/ostrich-bold.eot);
+  src: local("☺"), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-bold.woff) format("woff"), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-bold.ttf) format("truetype"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-bold.svg) format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url(http://pds26.egloos.com/pds/201312/26/26/ostrich-regular.eot);
+  src: local("☺"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-regular.woff) format("woff"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-regular.ttf) format("truetype"), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-regular.svg) format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ostrich Sans';
+  src: url(http://pds27.egloos.com/pds/201312/26/26/ostrich-light.eot);
+  src: local("☺"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-light.woff) format("woff"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-light.ttf) format("truetype"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-light.svg) format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+/* Ostrich Sans Rounded */
+@font-face {
+  font-family: 'Ostrich Sans Rounded';
+  src: url(http://pds27.egloos.com/pds/201312/26/26/ostrich-rounded.eot);
+  src: local("☺"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-rounded.woff) format("woff"), url(http://pds25.egloos.com/pds/201312/26/26/ostrich-rounded.ttf) format("truetype"), url(http://pds26.egloos.com/pds/201312/26/26/ostrich-rounded.svg) format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+/* Ostrich Sans Inline */
+@font-face {
+  font-family: 'Ostrich Sans Inline';
+  src: url(http://pds27.egloos.com/pds/201312/26/26/ostrich-sans-inline-regular.eot);
+  src: local("☺"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-regular.woff) format("woff"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-regular.ttf) format("truetype"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-regular.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ostrich Sans Inline';
+  src: url(http://pds26.egloos.com/pds/201312/26/26/ostrich-sans-inline-italic.eot);
+  src: local("☺"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-italic.woff) format("woff"), url(http://pds21.egloos.com/pds/201312/26/26/ostrich-sans-inline-italic.ttf) format("truetype"), url(http://pds27.egloos.com/pds/201312/26/26/ostrich-sans-inline-italic.svg) format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+/* line 83, ../sass/style.scss */
+html {
+  font-size: 16px;
+  line-height: 24px; }
+
+/* line 88, ../sass/style.scss */
+body {
+  color: #2D3135;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1em; }
+
+/* line 94, ../sass/style.scss */
+span {
+  font-family: "Nanum Gothic", sans-serif; }
+
+/* line 98, ../sass/style.scss */
+div#navibar {
+  font-family: "Nanum Gothic", sans-serif; }
+  /* line 101, ../sass/style.scss */
+  div#navibar a {
+    font-family: "Nanum Gothic", sans-serif; }
+  /* line 105, ../sass/style.scss */
+  div#navibar span {
+    font-family: "Nanum Gothic", sans-serif; }
+  /* line 108, ../sass/style.scss */
+  div#navibar p {
+    font-family: "Nanum Gothic", sans-serif; }
+
+/* line 113, ../sass/style.scss */
+a {
+  color: #0054a7;
+  text-decoration: none; }
+  /* line 18, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:visited {
+    color: #c1c9d1; }
+  /* line 21, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:focus {
+    color: #00e89e; }
+  /* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:hover {
+    color: #e84c00; }
+  /* line 27, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:active {
+    color: #00cfe8; }
+
+/*
+Add transition to containers so they can push in and out.
+*/
+/* line 123, ../sass/style.scss */
+#layout,
+#menu,
+.menu-link {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+
+/*
+This is the parent `<div>` that contains the menu and the content area.
+*/
+/* line 134, ../sass/style.scss */
+#layout {
+  padding-left: 280px;
+  /* left col width "#menu" */
+  left: 0; }
+
+/*
+The content `<div>` is where all your content goes.
+*/
+/*
+.content {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 800px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+}
+*/
+/* line 152, ../sass/style.scss */
+.header {
+  margin: 0;
+  color: #333;
+  text-align: center;
+  padding: 2.5em 2em 0;
+  border-bottom: 1px solid #eee; }
+
+/* line 159, ../sass/style.scss */
+.header h1 {
+  margin: 0.2em 0;
+  font-size: 3em;
+  font-weight: 300; }
+
+/* line 164, ../sass/style.scss */
+.header h2 {
+  font-weight: 300;
+  color: #ccc;
+  padding: 0;
+  margin-top: 0; }
+
+/* line 171, ../sass/style.scss */
+.content-subhead {
+  margin: 50px 0 20px 0;
+  font-weight: 300;
+  color: #888; }
+
+/*
+The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+appears on the left side of the page.
+
+By using the combination of `position: fixed; top: 0; bottom:0;`, we can make
+the menu have 100% height and be fixed on the page as the rest of it scrolls.
+*/
+/* line 184, ../sass/style.scss */
+#menu {
+  margin-left: -280px;
+  /* this should be "#menu" width */
+  width: 280px;
+  position: fixed;
+  top: 0;
+  left: 280px;
+  /* this should be "#menu" width */
+  bottom: 0;
+  z-index: 1;
+  /* so the menu or its navicon stays above all content */
+  background: #2D3135;
+  overflow-y: auto;
+  -webkit-overflow-scroll: touch;
+  /* for smooth scrolling on mobile */
+  color: #C1C9D1;
+  padding: 0; }
+
+/*
+All anchors inside the menu should be styled like this.
+*/
+/*
+Remove all background/borders, since we are applying them to #menu.
+*/
+/* line 206, ../sass/style.scss */
+#menu .pure-menu,
+#menu .pure-menu ul {
+  border: none;
+  background: transparent; }
+
+/* line 211, ../sass/style.scss */
+#main {
+  position: relative;
+  z-index: 1; }
+
+/* -- Dynamic Button For Responsive Menu -------------------------------------*/
+/*
+The button to open/close the Menu is custom-made and not part of Pure. Here's
+how it works:
+*/
+/*
+`.menu-link` represents the responsive menu toggle that shows/hides on
+small screens.
+*/
+/* line 227, ../sass/style.scss */
+.menu-link {
+  display: none;
+  /* show this only on small screens */
+  top: 0;
+  left: 280px;
+  /* `#menu`'s width */
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+  /* change this value to increase/decrease button size */
+  z-index: 9999999;
+  width: 100%;
+  height: auto;
+  padding: 10px 10px 5px 10px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+  /* line 238, ../sass/style.scss */
+  .menu-link:hover {
+    background: black;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  /* line 245, ../sass/style.scss */
+  .menu-link a {
+    font-family: 'Ostrich Sans Rounded', Wire One, Nanum Gothic, sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+    color: #C1C9D1; }
+    /* line 251, ../sass/style.scss */
+    .menu-link a:hover {
+      color: #efd128;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-out;
+      -moz-transition-timing-function: ease-out;
+      -o-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+  /* line 259, ../sass/style.scss */
+  .menu-link a.miniLogo {
+    font-family: 'Ostrich Sans Inline', Wire One, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    -webkit-transform: skew(0deg, -12deg);
+    -moz-transform: skew(0deg, -12deg);
+    -ms-transform: skew(0deg, -12deg);
+    -o-transform: skew(0deg, -12deg);
+    transform: skew(0deg, -12deg);
+    color: #C1C9D1;
+    letter-spacing: -1px;
+    margin-left: 0px; }
+    /* line 268, ../sass/style.scss */
+    .menu-link a.miniLogo:hover {
+      color: #efd128;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-out;
+      -moz-transition-timing-function: ease-out;
+      -o-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+
+/* line 283, ../sass/style.scss */
+.menu-link span {
+  position: relative;
+  display: block; }
+
+/* line 290, ../sass/style.scss */
+.menu-link span,
+.menu-link span:before,
+.menu-link span:after {
+  background-color: #fff;
+  width: 100%;
+  height: 0.2em; }
+
+/* line 297, ../sass/style.scss */
+.menu-link span:before,
+.menu-link span:after {
+  position: absolute;
+  margin-top: -0.6em;
+  content: " "; }
+
+/* line 303, ../sass/style.scss */
+.menu-link span:after {
+  margin-top: 0.6em; }
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+/*
+Hides the menu at `767px`, but modify this based on your app's needs.
+*/
+@media (max-width: 767px) {
+  /* line 315, ../sass/style.scss */
+  .header {
+    text-align: left; }
+
+  /*
+  Navigation Push styles.
+  */
+  /* line 322, ../sass/style.scss */
+  #layout {
+    position: relative;
+    padding-left: 0; }
+
+  /* line 326, ../sass/style.scss */
+  #layout.active {
+    position: relative;
+    left: 280px; }
+
+  /* line 330, ../sass/style.scss */
+  #layout.active #menu {
+    left: 280px;
+    width: 280px; }
+
+  /* line 335, ../sass/style.scss */
+  #menu {
+    left: 0; }
+
+  /* line 339, ../sass/style.scss */
+  .menu-link {
+    position: fixed;
+    left: 0;
+    display: block;
+    /* show the button on small screens */ }
+
+  /* line 345, ../sass/style.scss */
+  #layout.active .menu-link {
+    left: 280px; } }
+/* !일반 스타일 */
+/* !로고 */
+/* line 354, ../sass/style.scss */
+.logo {
+  width: 240px;
+  /*
+  	background: #16181A;
+  	@include border-radius(50%);
+  	@include box-shadow( 0px 1px 10px #000,0px 0px 0px 2px #16181A inset, 0px 0px 0px 4px #9EA4AB inset);
+  */
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 26px; }
+  /* line 365, ../sass/style.scss */
+  .logo span.big {
+    position: absolute;
+    font-family: 'Ostrich Sans Inline', Wire One, sans-serif;
+    font-weight: 100;
+    font-size: 60px;
+    -webkit-transform: skew(0deg, -12deg);
+    -moz-transform: skew(0deg, -12deg);
+    -ms-transform: skew(0deg, -12deg);
+    -o-transform: skew(0deg, -12deg);
+    transform: skew(0deg, -12deg);
+    top: 125px;
+    left: 53px;
+    color: #C1C9D1;
+    letter-spacing: -1px; }
+  /* line 377, ../sass/style.scss */
+  .logo span.small {
+    font-family: 'Ostrich Sans', Wire One, sans-serif;
+    font-weight: 400;
+    position: absolute;
+    -webkit-transform: skew(0deg, -12deg);
+    -moz-transform: skew(0deg, -12deg);
+    -ms-transform: skew(0deg, -12deg);
+    -o-transform: skew(0deg, -12deg);
+    transform: skew(0deg, -12deg);
+    top: 165px;
+    left: 58px; }
+
+/* !문구 */
+/* line 388, ../sass/style.scss */
+div.message {
+  padding-left: 26px;
+  display: block; }
+  /* line 391, ../sass/style.scss */
+  div.message p {
+    color: #16181a;
+    font-family: 'Ostrich Sans', Wire One, sans-serif;
+    font-weight: 400;
+    font-size: 1.688em;
+    line-height: 1px;
+    text-shadow: 0px 1px #424547;
+    text-align: left; }
+
+/* line 402, ../sass/style.scss */
+div.skininfo {
+  padding-left: 26px;
+  margin-bottom: 26px;
+  display: block; }
+  /* line 406, ../sass/style.scss */
+  div.skininfo p {
+    color: #5d656d;
+    font-family: 'Ostrich Sans', Wire One, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: left;
+    margin-bottom: -15px;
+    text-shadow: 0px -2px #16181a; }
+  /* line 417, ../sass/style.scss */
+  div.skininfo a {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    color: #efd128; }
+
+/* !기본 카테고리 스타일 리셋 */
+/* line 428, ../sass/style.scss */
+div.pure-menu ul.widget_content {
+  left: 0;
+  top: 0;
+  margin: auto;
+  padding: auto;
+  position: relative;
+  visibility: visible; }
+
+/* !카테고리 */
+/* line 440, ../sass/style.scss */
+div.menu_category {
+  text-align: left;
+  padding-left: 26px;
+  color: #B9C1C8; }
+  /* line 444, ../sass/style.scss */
+  div.menu_category h3 {
+    text-align: left;
+    color: transparent; }
+    /* line 448, ../sass/style.scss */
+    div.menu_category h3:before {
+      content: "category";
+      font-family: 'Ostrich Sans', Wire One, sans-serif;
+      font-weight: 700;
+      font-size: 50px;
+      color: #B9C1C8;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: -10px; }
+  /* line 461, ../sass/style.scss */
+  div.menu_category a {
+    font-family: "Ostrich Sans", Wire One, Nanum Gothic, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    margin-left: 10px;
+    font-weight: 100;
+    color: #B9C1C8; }
+    /* line 473, ../sass/style.scss */
+    div.menu_category a:hover {
+      color: #efd128;
+      background: none;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-in;
+      -moz-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+  /* line 483, ../sass/style.scss */
+  div.menu_category span.count {
+    font-size: 20px;
+    font-family: 'Ostrich Sans Rounded', Wire One, sans-serif; }
+
+/* !이글루스 스타일 */
+/* line 491, ../sass/style.scss */
+.content_wrap {
+  margin-top: 34px; }
+
+/* line 495, ../sass/style.scss */
+div.content {
+  margin: 0;
+  padding: 0 5%;
+  overflow: hidden; }
+
+/* line 501, ../sass/style.scss */
+div.post_content {
+  overflow: visible; }
+
+/* line 505, ../sass/style.scss */
+.post_view .post_content {
+  overflow: visible; }
+
+/* ! 반응형 이미지  */
+/* line 510, ../sass/style.scss */
+div.post_view {
+  overflow: visible;
+  margin-top: 4em;
+  margin-bottom: 4em; }
+  /* line 515, ../sass/style.scss */
+  div.post_view div.hentry img {
+    width: 112%;
+    height: auto;
+    margin-left: -7%;
+    margin-right: -8%;
+    max-width: 112%; }
+
+/* !유틸리티 */
+/* line 527, ../sass/style.scss */
+iframe, object, embed {
+  max-width: 100%; }
+
+/* !제목 */
+/* line 531, ../sass/style.scss */
+div.post_title {
+  margin-bottom: 20px; }
+
+/* line 535, ../sass/style.scss */
+h2.entry-title {
+  font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif;
+  font-size: 93px;
+  line-height: 93px;
+  font-weight: 900;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  height: 85px;
+  margin-bottom: 1em; }
+  /* line 546, ../sass/style.scss */
+  h2.entry-title a {
+    color: #2D3134;
+    text-decoration: none; }
+
+/* line 552, ../sass/style.scss */
+span.post_title_category {
+  display: none; }
+
+/* line 556, ../sass/style.scss */
+ul.post_info {
+  margin-top: 1em;
+  font-size: 50px;
+  color: #D5D5D6; }
+  /* line 561, ../sass/style.scss */
+  ul.post_info span.txt {
+    display: none !important; }
+  /* line 565, ../sass/style.scss */
+  ul.post_info li {
+    font-family: 'Ostrich Sans', Wire One, Nanum Gothic,  sans-serif !important;
+    font-weight: 300; }
+  /* line 569, ../sass/style.scss */
+  ul.post_info li.post_info_link {
+    display: none; }
+  /* line 574, ../sass/style.scss */
+  ul.post_info li.post_info_cmtcount span.txt {
+    display: none; }
+  /* line 578, ../sass/style.scss */
+  ul.post_info li.post_info_cmtcount:before {
+    content: "comments"; }
+
+/* !저자 표시 */
+/* line 585, ../sass/style.scss */
+span.by {
+  font-family: 'Ostrich Sans', Wire One, Nanum Gothic,  sans-serif !important;
+  font-weight: 300; }
+
+/* line 590, ../sass/style.scss */
+.post_view .post_info {
+  font-size: 50px; }
+
+/* !포스트 메타 정보 */
+/* line 595, ../sass/style.scss */
+div.post_meta_area {
+  display: none; }
+
+/* !태그 */
+/* line 600, ../sass/style.scss */
+div.post_taglist {
+  background: none;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 14px; }
+  /* line 605, ../sass/style.scss */
+  div.post_taglist:before {
+    content: "tags";
+    font-family: "Ostrich Sans", Wire One, Nanum Gothic, sans-serif; }
+
+/* !프로필 */
+/* line 614, ../sass/style.scss */
+div.profile_image img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 0px; }
+
+/* line 620, ../sass/style.scss */
+.menu_profile .profile_image img {
+  border: 10px solid rgba(0, 0, 0, 0.5); }
+
+/* line 624, ../sass/style.scss */
+span.profile_usernick {
+  color: #B9C1C8;
+  font-family: Ostrich sans;
+  font-size: 22px;
+  line-height: 24px; }
+  /* line 629, ../sass/style.scss */
+  span.profile_usernick span.by {
+    display: none; }
+
+/* line 634, ../sass/style.scss */
+.menu_profile .profile_desc .profile_usernick {
+  color: #B9C1C8;
+  font-family: Ostrich sans;
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0; }
+
+/* !트렉백 주소 */
+/* line 643, ../sass/style.scss */
+.post_trackback .trackback_help em {
+  font-famliy: 'Ostrich Sans Rounded', Wire One !important;
+  font-size: 18px;
+  font: "Ostrich Sans", Wire One, Nanum Gothic, sans-serif !important; }
+
+/* line 649, ../sass/style.scss */
+div.post_footer_area {
+  font-size: 1em; }
+
+/* !코맨트 */
+/* line 655, ../sass/style.scss */
+div.post_comment a {
+  color: #2d3135; }
+
+/* line 663, ../sass/style.scss */
+li.comment_item span.comment_gravatar img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
+
+/* line 669, ../sass/style.scss */
+li.comment_reply {
+  background: none; }
+  /* line 672, ../sass/style.scss */
+  li.comment_reply span.comment_gravatar img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 0px; }
+
+/* line 681, ../sass/style.scss */
+.post_comment .comment_list li.comment_reply {
+  background: none; }
+
+/* line 685, ../sass/style.scss */
+.post_comment .comment_list h4.comment_writer_info span.comment_gravatar img {
+  border: 0px; }
+
+/* line 689, ../sass/style.scss */
+.post_comment .comment_list li.comment_reply h4.comment_writer_info span.comment_gravatar img {
+  width: 50px;
+  height: 50px;
+  border: 0px; }
+
+/* line 695, ../sass/style.scss */
+.post_comment .comment_write .comment_info span.comment_now img {
+  width: 50px;
+  height: 50px;
+  border: 0px; }
+
+/* line 701, ../sass/style.scss */
+span.comment_datetime {
+  font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+  font-size: 20px; }
+
+/* line 707, ../sass/style.scss */
+div.comment_write fieldset {
+  border: 0px; }
+  /* line 710, ../sass/style.scss */
+  div.comment_write fieldset input {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #ddd;
+    background: #ddd; }
+    /* line 716, ../sass/style.scss */
+    div.comment_write fieldset input:focus {
+      background: #fff;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-in;
+      -moz-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+  /* line 724, ../sass/style.scss */
+  div.comment_write fieldset textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #ddd;
+    background: #ddd; }
+    /* line 730, ../sass/style.scss */
+    div.comment_write fieldset textarea:focus {
+      background: #fff;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-in;
+      -moz-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+
+/* line 744, ../sass/style.scss */
+div.comment_info span.comment_now img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; }
+
+/* line 756, ../sass/style.scss */
+::-moz-selection {
+  color: #EFD128;
+  background: #2D3135; }
+
+/* line 757, ../sass/style.scss */
+::selection {
+  color: #EFD128;
+  background: #2D3135; }
+
+/* !사이드바 */
+/* !카운터 */
+/* line 770, ../sass/style.scss */
+div.widget_statWgt_b {
+  margin: 1em 0;
+  width: 180px;
+  margin: 0 auto;
+  color: #B9C1C8; }
+  /* line 776, ../sass/style.scss */
+  div.widget_statWgt_b div.widget_content {
+    background: transparent;
+    font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+    color: transparent; }
+  /* line 782, ../sass/style.scss */
+  div.widget_statWgt_b a {
+    display: none; }
+
+/* line 787, ../sass/style.scss */
+.widget_statWgt_b .widget_content .statWgt_count_b strong {
+  color: #B9C1C8;
+  font-family: 'Ostrich Sans', Wire One, sans-serif;
+  font-size: 30px;
+  font-weight: 400; }
+  /* line 792, ../sass/style.scss */
+  .widget_statWgt_b .widget_content .statWgt_count_b strong:before {
+    content: "Today";
+    font-family: 'Ostrich Sans', Wire One, sans-serif;
+    font-size: 30px;
+    color: #B9C1C8;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    font-weight: 400; }
+
+/* line 804, ../sass/style.scss */
+.widget_statWgt_b .widget_content .statWgt_count_b {
+  color: transparent; }
+
+/* line 808, ../sass/style.scss */
+div.statWgt_count_b {
+  font-family: 'Ostrich Sans Rounded', Wire One, sans-serif; }
+
+/* !달력 */
+/* line 814, ../sass/style.scss */
+div.menu_calendar {
+  font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+  font-size: 20px;
+  width: 160px;
+  margin: 0 auto; }
+
+/* line 821, ../sass/style.scss */
+div.cal_month {
+  font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+  font-size: 20px; }
+  /* line 825, ../sass/style.scss */
+  div.cal_month a {
+    padding: 0; }
+
+/* !달력 글씨 */
+/* line 831, ../sass/style.scss */
+.menu_calendar .tb_cal th {
+  font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+  font-size: 20px; }
+
+/* line 836, ../sass/style.scss */
+.menu_calendar .tb_cal td.on a {
+  font-weight: 900;
+  text-decoration: underline;
+  font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+  font-size: 20px; }
+
+/* line 843, ../sass/style.scss */
+.menu_calendar .tb_cal td.today {
+  color: #efd128;
+  font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+  font-size: 20px; }
+
+/* line 849, ../sass/style.scss */
+.menu_calendar .tb_cal td {
+  font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+  font-size: 20px; }
+
+/* !태그 */
+/* line 855, ../sass/style.scss */
+div.menu_tagcloud {
+  text-align: left;
+  padding: 0 26px;
+  color: #B9C1C8; }
+  /* line 859, ../sass/style.scss */
+  div.menu_tagcloud h3 {
+    text-align: left;
+    color: transparent; }
+    /* line 863, ../sass/style.scss */
+    div.menu_tagcloud h3:before {
+      content: "Tags";
+      font-family: 'Ostrich Sans', Wire One, sans-serif;
+      font-weight: 700;
+      font-size: 50px;
+      color: #B9C1C8;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: -10px; }
+  /* line 875, ../sass/style.scss */
+  div.menu_tagcloud div.widget_content {
+    clear: both; }
+    /* line 878, ../sass/style.scss */
+    div.menu_tagcloud div.widget_content a {
+      float: left; }
+
+/* !메뉴릿 */
+/* line 886, ../sass/style.scss */
+div.menu_selfmenu {
+  text-align: left;
+  padding-left: 26px;
+  color: #B9C1C8; }
+  /* line 890, ../sass/style.scss */
+  div.menu_selfmenu h3 {
+    text-align: left;
+    color: transparent; }
+    /* line 894, ../sass/style.scss */
+    div.menu_selfmenu h3:before {
+      content: "Menus";
+      font-family: 'Ostrich Sans', Wire One, sans-serif;
+      font-weight: 700;
+      font-size: 50px;
+      color: #B9C1C8;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: -10px; }
+  /* line 907, ../sass/style.scss */
+  div.menu_selfmenu ul.widget_content li {
+    text-align: left; }
+  /* line 912, ../sass/style.scss */
+  div.menu_selfmenu a {
+    font-family: "Ostrich Sans", Wire One, Nanum Gothic, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    margin-left: 10px;
+    font-weight: 100;
+    color: #B9C1C8; }
+    /* line 924, ../sass/style.scss */
+    div.menu_selfmenu a:hover {
+      color: #efd128;
+      background: none;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-in;
+      -moz-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+
+/* !포토로그 주소 */
+/* line 937, ../sass/style.scss */
+div.photolog_name {
+  text-align: left;
+  padding: 0 26px;
+  color: #B9C1C8; }
+  /* line 941, ../sass/style.scss */
+  div.photolog_name a {
+    font-family: 'Ostrich Sans Rounded', Wire One, sans-serif;
+    font-size: 30px;
+    line-height: 27px;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    margin-left: 10px;
+    font-weight: 100;
+    color: #B9C1C8; }
+    /* line 953, ../sass/style.scss */
+    div.photolog_name a:hover {
+      color: #efd128;
+      background: none;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-in;
+      -moz-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+
+/* !아카이브 */
+/* line 965, ../sass/style.scss */
+div.menu_archive {
+  text-align: left;
+  padding-left: 26px;
+  color: #B9C1C8; }
+  /* line 969, ../sass/style.scss */
+  div.menu_archive h3 {
+    text-align: left;
+    color: transparent; }
+    /* line 973, ../sass/style.scss */
+    div.menu_archive h3:before {
+      content: "Archive";
+      font-family: 'Ostrich Sans', Wire One, sans-serif;
+      font-weight: 700;
+      font-size: 50px;
+      color: #B9C1C8;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: -10px; }
+  /* line 985, ../sass/style.scss */
+  div.menu_archive a {
+    font-family: "Ostrich Sans", Wire One, Nanum Gothic, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    margin-left: 10px;
+    font-weight: 100;
+    color: #B9C1C8; }
+    /* line 997, ../sass/style.scss */
+    div.menu_archive a:hover {
+      color: #efd128;
+      background: none;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-in;
+      -moz-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+  /* line 1007, ../sass/style.scss */
+  div.menu_archive span.count {
+    font-size: 20px;
+    font-family: 'Ostrich Sans Rounded', Wire One, sans-serif; }
+
+/* ! 사이드바 스타일 리셋 */
+/* line 1017, ../sass/style.scss */
+div.pure-menu ul {
+  left: 0;
+  top: 0;
+  margin: auto;
+  padding: auto;
+  position: relative;
+  visibility: visible; }
+
+/* !블로그롤 */
+/* line 1028, ../sass/style.scss */
+div.menu_blogroll {
+  text-align: left;
+  padding: 0 26px;
+  color: #B9C1C8; }
+  /* line 1032, ../sass/style.scss */
+  div.menu_blogroll h3 {
+    text-align: left;
+    color: transparent; }
+    /* line 1036, ../sass/style.scss */
+    div.menu_blogroll h3:before {
+      content: "Links";
+      font-family: 'Ostrich Sans', Wire One, sans-serif;
+      font-weight: 700;
+      font-size: 50px;
+      color: #B9C1C8;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: -10px; }
+
+/* !링크 사진 */
+/* line 1053, ../sass/style.scss */
+.menu_blogroll li .blogroll_gravatar img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 0;
+  background: none; }
+
+/* line 1060, ../sass/style.scss */
+.pure-menu a {
+  border: 0; }
+
+/* !트랙백 */
+/* line 1065, ../sass/style.scss */
+div.menu_trackback {
+  text-align: left;
+  padding: 0 26px;
+  color: #B9C1C8; }
+  /* line 1069, ../sass/style.scss */
+  div.menu_trackback h3 {
+    text-align: left;
+    color: transparent; }
+    /* line 1073, ../sass/style.scss */
+    div.menu_trackback h3:before {
+      content: "Trackbacks";
+      font-family: 'Ostrich Sans', Wire One, sans-serif;
+      font-weight: 700;
+      font-size: 50px;
+      color: #B9C1C8;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: -10px; }
+
+/* !핑백 */
+/* line 1088, ../sass/style.scss */
+div.menu_pingback {
+  text-align: left;
+  padding: 0 26px;
+  color: #B9C1C8; }
+  /* line 1092, ../sass/style.scss */
+  div.menu_pingback h3 {
+    text-align: left;
+    color: transparent; }
+    /* line 1096, ../sass/style.scss */
+    div.menu_pingback h3:before {
+      content: "Pingback";
+      font-family: 'Ostrich Sans', Wire One, sans-serif;
+      font-weight: 700;
+      font-size: 50px;
+      color: #B9C1C8;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: -10px; }
+
+/* !코맨트 */
+/* line 1111, ../sass/style.scss */
+div.menu_comment {
+  text-align: left;
+  padding: 0 26px;
+  color: #B9C1C8; }
+  /* line 1115, ../sass/style.scss */
+  div.menu_comment h3 {
+    text-align: left;
+    color: transparent; }
+    /* line 1119, ../sass/style.scss */
+    div.menu_comment h3:before {
+      content: "Comments";
+      font-family: 'Ostrich Sans', Wire One, sans-serif;
+      font-weight: 700;
+      font-size: 50px;
+      color: #B9C1C8;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: -10px; }
+
+/* !라이프로그 */
+/* line 1134, ../sass/style.scss */
+div.menu_lifelog {
+  text-align: left;
+  padding-left: 26px;
+  color: #B9C1C8; }
+  /* line 1138, ../sass/style.scss */
+  div.menu_lifelog h3 {
+    text-align: left;
+    color: transparent; }
+    /* line 1142, ../sass/style.scss */
+    div.menu_lifelog h3:before {
+      content: "Life Log";
+      font-family: 'Ostrich Sans', Wire One, sans-serif;
+      font-weight: 700;
+      font-size: 50px;
+      color: #B9C1C8;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: -10px; }
+
+/* !포토로그 */
+/* line 1157, ../sass/style.scss */
+div.menu_photolog {
+  text-align: left;
+  padding-left: 26px;
+  color: #B9C1C8; }
+  /* line 1161, ../sass/style.scss */
+  div.menu_photolog h3 {
+    text-align: left;
+    color: transparent; }
+    /* line 1165, ../sass/style.scss */
+    div.menu_photolog h3:before {
+      content: "Photo log";
+      font-family: 'Ostrich Sans', Wire One, sans-serif;
+      font-weight: 700;
+      font-size: 50px;
+      color: #B9C1C8;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: -10px; }
+
+/* !검색 */
+/* line 1180, ../sass/style.scss */
+div.menu_search {
+  text-align: left;
+  padding-left: 26px;
+  color: #B9C1C8; }
+  /* line 1184, ../sass/style.scss */
+  div.menu_search fieldset {
+    border: 0; }
+  /* line 1188, ../sass/style.scss */
+  div.menu_search input.input_search {
+    border: 0;
+    background: #16181A;
+    color: #B9C1C8;
+    font-size: 32px;
+    font-family: "Nanum Gothic", sans-serif;
+    width: 100px;
+    outline: 0;
+    height: 20px; }
+    /* line 1198, ../sass/style.scss */
+    div.menu_search input.input_search:focus {
+      background: #efd128;
+      color: #2D3135;
+      width: 150px;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-in;
+      -moz-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+  /* line 1208, ../sass/style.scss */
+  div.menu_search input.submit {
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    background: #0054a7 url(http://pds25.egloos.com/pds/201312/28/26/a0205726_52bdd673ddaa8.png) no-repeat 12px 10px;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    margin-left: -2px; }
+    /* line 1218, ../sass/style.scss */
+    div.menu_search input.submit:hover {
+      background: #e84c00 url(http://pds25.egloos.com/pds/201312/28/26/a0205726_52bdd673ddaa8.png) no-repeat 12px 10px;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-timing-function: ease-in;
+      -moz-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      transition-timing-function: ease-in; }
+  /* line 1226, ../sass/style.scss */
+  div.menu_search p {
+    display: none; }
+
+/* line 1231, ../sass/style.scss */
+div.menu_search input.input_search {
+  height: 40px;
+  width: 120px; }
+
+/* line 1237, ../sass/style.scss */
+.pure-menu a {
+  padding: 0;
+  background: none;
+  color: #b9c1c8; }
+  /* line 18, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  .pure-menu a:visited {
+    color: #c1c9d1; }
+  /* line 21, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  .pure-menu a:focus {
+    color: #00e89e; }
+  /* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  .pure-menu a:hover {
+    color: #e84c00; }
+  /* line 27, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  .pure-menu a:active {
+    color: #00cfe8; }
+  /* line 1242, ../sass/style.scss */
+  .pure-menu a:hover {
+    color: #efd128;
+    background: none;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in; }
+
+/* line 1251, ../sass/style.scss */
+.pure-menu li a {
+  padding: 0;
+  background: none;
+  color: #b9c1c8; }
+  /* line 18, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  .pure-menu li a:visited {
+    color: #c1c9d1; }
+  /* line 21, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  .pure-menu li a:focus {
+    color: #00e89e; }
+  /* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  .pure-menu li a:hover {
+    color: #e84c00; }
+  /* line 27, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  .pure-menu li a:active {
+    color: #00cfe8; }
+  /* line 1256, ../sass/style.scss */
+  .pure-menu li a:hover {
+    color: #efd128;
+    background: none;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in; }
+
+/* !태그 클라우드 */
+/* line 1266, ../sass/style.scss */
+div.post_tagcloud {
+  margin-bottom: 2em; }
+  /* line 1268, ../sass/style.scss */
+  div.post_tagcloud h2.page_title {
+    text-align: left;
+    color: transparent; }
+    /* line 1272, ../sass/style.scss */
+    div.post_tagcloud h2.page_title:before {
+      content: "Tag Cloud";
+      font-family: 'Ostrich Sans', Wire One, sans-serif;
+      font-size: 93px;
+      line-height: 93px;
+      font-weight: 900;
+      display: block;
+      text-align: left;
+      color: #2D3135; }
+  /* line 1284, ../sass/style.scss */
+  div.post_tagcloud span {
+    text-align: left; }
+  /* line 1288, ../sass/style.scss */
+  div.post_tagcloud a {
+    font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif;
+    font-size: 30px;
+    text-align: left; }
+    /* line 1293, ../sass/style.scss */
+    div.post_tagcloud a:after {
+      content: ",";
+      font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif;
+      font-size: 30px; }
+
+/* !검색결과 */
+/* line 1303, ../sass/style.scss */
+div.search_wrap div.search {
+  background: transparent;
+  border: 0; }
+/* line 1308, ../sass/style.scss */
+div.search_wrap p.powered {
+  display: none; }
+/* line 1312, ../sass/style.scss */
+div.search_wrap input#srch_kwd {
+  width: 500px;
+  height: 150px;
+  background: #dddddd;
+  outline: 0;
+  font-size: 90px;
+  font-family: "Ostrich Sans", Wire One, Nanum Gothic, sans-serif;
+  font-style: bold; }
+  /* line 1321, ../sass/style.scss */
+  div.search_wrap input#srch_kwd:focus {
+    background: red; }
+
+/* line 1327, ../sass/style.scss */
+.s_box .search {
+  background: transparent !important;
+  border: 0 !important; }
+
+/* line 1332, ../sass/style.scss */
+.s_box .search .inner {
+  background: transparent !important;
+  border: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  margin-bottom: 20px !important; }
+
+/* !버튼 */
+/* line 1342, ../sass/style.scss */
+.s_box .search .inner button {
+  float: left !important;
+  width: 10% !important;
+  height: 100px !important;
+  background: #0054A7 !important;
+  font-size: 50px !important;
+  color: #fff !important;
+  margin-top: 1px !important; }
+
+/* !검색폼 */
+/* line 1353, ../sass/style.scss */
+input#srch_kwd {
+  width: 20%;
+  height: 80px;
+  background: #dddddd !important;
+  outline: 0;
+  font-size: 90px;
+  font-family: "Ostrich Sans", Wire One, Nanum Gothic, sans-serif;
+  font-style: bold;
+  height: 80px;
+  padding: 10px;
+  line-height: 90px; }
+  /* line 1365, ../sass/style.scss */
+  input#srch_kwd:focus {
+    background: #0054A7 !important;
+    color: white;
+    width: 80%;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in; }
+
+/* line 1375, ../sass/style.scss */
+.s_box .search .inner input {
+  border: 0px; }
+
+/* line 1379, ../sass/style.scss */
+p.powered {
+  display: none; }
+
+/* line 1383, ../sass/style.scss */
+.search_result .news_sort_option li.selected a {
+  border: 0;
+  background: transparent !important;
+  -moz-box-shadow: transparent !important;
+  -webkit-box-shadow: transparent !important;
+  box-shadow: transparent !important; }
+
+/* line 1391, ../sass/style.scss */
+.search_result .news_sort_option li a {
+  border: 0;
+  color: t; }
+
+/* !검색결과 숫자 색상 */
+/* line 1397, ../sass/style.scss */
+.search_result p strong {
+  color: #0054A7 !important; }
+
+/* !검색 결과 섬네일 */
+/* line 1402, ../sass/style.scss */
+.type_01 .thumb .thumb_photo {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+
+/* !검색 결과 제목 */
+/* line 1407, ../sass/style.scss */
+.type_01 dt a {
+  font-family: "Ostrich Sans", Wire One, Nanum Gothic, sans-serif;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 100;
+  color: #2D3134;
+  text-decoration: none !important; }
+
+/* !검색결과 날짜 */
+/* line 1417, ../sass/style.scss */
+.type_01 dd.txt_date {
+  text-align: right;
+  font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif !important;
+  color: #2D3134;
+  font-size: 30px !important;
+  float: right; }
+
+/* !페이징 표시 테두리 */
+/* line 1426, ../sass/style.scss */
+.type_01 {
+  border: 0 !important; }
+
+/* line 1430, ../sass/style.scss */
+.paging a {
+  border: 0 !important;
+  font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif !important;
+  font-size: 30px !important;
+  font-weight: 100 !important; }
+
+/* line 1437, ../sass/style.scss */
+.paging a.first {
+  border: 0 !important; }
+
+/* line 1441, ../sass/style.scss */
+.paging a.on {
+  background: none !important;
+  border: 0 !important; }
+
+/* !아카이브 리스트 */
+/* line 1449, ../sass/style.scss */
+h2.page_title span.title {
+  text-align: left;
+  font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif !important;
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 900;
+  float: left; }
+/* line 1459, ../sass/style.scss */
+h2.page_title span.action_view_select a {
+  background: none; }
+
+/* line 1466, ../sass/style.scss */
+div.common_top_list ul.f_clear {
+  text-align: left; }
+  /* line 1469, ../sass/style.scss */
+  div.common_top_list ul.f_clear li a {
+    text-align: left;
+    font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif !important;
+    color: #2D3134;
+    font-size: 40px; }
+  /* line 1476, ../sass/style.scss */
+  div.common_top_list ul.f_clear li span.count {
+    text-align: left; }
+  /* line 1480, ../sass/style.scss */
+  div.common_top_list ul.f_clear li span.date {
+    font-family: 'Ostrich Sans', Wire One, Nanum Gothic , sans-serif !important; }
+
+/* line 1488, ../sass/style.scss */
+div.post_summary h2.entry-title {
+  text-align: left; }
+/* line 1491, ../sass/style.scss */
+div.post_summary ul.post_info {
+  text-align: left;
+  font-size: 50px;
+  color: #D5D5D6; }
+/* line 1497, ../sass/style.scss */
+div.post_summary div.post_content {
+  text-align: left;
+  margin-top: 1em;
+  font-size: 16px;
+  line-height: 24px; }
+
+/* line 1505, ../sass/style.scss */
+a.sumlist, a.sumview {
+  background: none !important; }
+
+/* !페이지 */
+/* line 1510, ../sass/style.scss */
+.post_paging .page {
+  font-family: "Ostrich Sans", Wire One, Nanum Gothic, sans-serif;
+  font-size: 30px;
+  font-weight: 100; }
